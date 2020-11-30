@@ -36,7 +36,15 @@ public class Main {
           // Push message over socket to the user
         })
     });
-    globalSender.send("fetch-product", "Everything works!");
+    globalSender.send("fetch-product", "SESSION_ID,USER_1,PRODUCT_ID_1");
+    globalSender.send("fetch-product", "SESSION_ID,USER_1,PRODUCT_ID_2");
+    globalSender.send("fetch-product", "SESSION_ID,USER_1,PRODUCT_ID_3");
+    globalSender.send("fetch-product", "SESSION_ID,USER_2,PRODUCT_ID_2");
+    globalSender.send("fetch-product", "SESSION_ID,USER_2,PRODUCT_ID_1");
+    globalSender.send("fetch-product", "SESSION_ID,USER_3,PRODUCT_ID_1");
+    globalSender.send("fetch-product", "SESSION_ID,USER_3,PRODUCT_ID_3");
+    globalSender.send("fetch-product", "SESSION_ID,USER_4,PRODUCT_ID_4");
+    globalSender.send("fetch-product", "SESSION_ID,USER_5,PRODUCT_ID_5");
 
     SpringApplication.run(Main.class, args);
   }
