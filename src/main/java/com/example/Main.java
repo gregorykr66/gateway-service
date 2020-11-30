@@ -36,7 +36,7 @@ public class Main {
           // Push message over socket to the user
         })
     });
-    globalSender.send("display", "Everything works!");
+    globalSender.send("fetch-product", "Everything works!");
 
     SpringApplication.run(Main.class, args);
   }
